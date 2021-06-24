@@ -17,9 +17,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_bomb.mk
+     $(LOCAL_DIR)/omni_atom.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_bomb-user \
-    omni_bomb-userdebug \
-    omni_bomb-eng
+    omni_atom-user \
+    omni_atom-userdebug \
+    omni_atom-eng
