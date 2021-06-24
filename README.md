@@ -1,5 +1,5 @@
-# 橙 狐 (OFRP) for Redmi 10X Pro (bomb)
-使用红米 10X Pro，MIUI 12.5（安卓11）制作，提取官方安卓11内核，适用于橙狐安卓10分支
+# 橙 狐 (OFRP) for Redmi 10X 5G（atom）
+使用红米 10X 5G，MIUI 12.5（安卓11）制作，提取官方安卓11内核，适用于橙狐安卓10分支
 
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")
 
@@ -14,12 +14,12 @@ recovery基本功能都可以正常使用
 
 等一个大佬来帮忙解决上面两个问题
 
-使用红米10X Pro制作，理论上支持红米10X 5G，等一个勇士来测试
+感谢ymdzq大佬指点。
 
 # 如何构建
 下载OFRP源代码，克隆这个仓库放到相应的位置
 
-例如OFRP源代码根目录为~/OrangeFox_10/fox_10.0，则保存为~/OrangeFox_10/fox_10.0/device/xiaomi/bomb/:
+例如OFRP源代码根目录为~/OrangeFox_10/fox_10.0，则保存为~/OrangeFox_10/fox_10.0/device/xiaomi/atom/:
 
 ```bash
 cd ~/OrangeFox_10/fox_10.0
