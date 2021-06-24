@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/bomb
+LOCAL_PATH := device/xiaomi/atom
 
 # dynamic partition stuff
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
