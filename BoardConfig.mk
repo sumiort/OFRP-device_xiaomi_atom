@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/bomb
+DEVICE_PATH := device/xiaomi/atom
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -40,10 +40,10 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := bomb
+TARGET_OTA_ASSERT_DEVICE := atom
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := bomb
+TARGET_BOOTLOADER_BOARD_NAME := atom
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
