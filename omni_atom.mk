@@ -17,11 +17,11 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := bomb
-DEVICE_PATH := device/xiaomi/bomb
+PRODUCT_RELEASE_NAME := atom
+DEVICE_PATH := device/xiaomi/atom
 
 # Inherit from bomb device
-$(call inherit-product, device/xiaomi/bomb/device.mk)
+$(call inherit-product, device/xiaomi/atom/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
@@ -29,12 +29,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := bomb
-PRODUCT_NAME := omni_bomb
+PRODUCT_DEVICE := atom
+PRODUCT_NAME := omni_atom
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := M2004J7BC
+PRODUCT_MODEL := M2004J7AC
 PRODUCT_MANUFACTURER := Xiaomi
-#PRODUCT_RELEASE_NAME := Redmi 10X Pro
+#PRODUCT_RELEASE_NAME := Redmi 10X 5G
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
