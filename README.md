@@ -25,11 +25,11 @@ recovery基本功能都可以正常使用
 cd ~/OrangeFox_10/fox_10.0
 mkdir -p device/xiaomi
 cd device/xiaomi
-git clone https://github.com/ymdzq/OFRP-device_xiaomi_bomb.git bomb
+git clone https://github.com/sumiort/OFRP-device_xiaomi_atom.git atom
 ```
 
 打开源代码根目录运行:
 
 ```bash
-. build/envsetup.sh && lunch omni_bomb-eng && mka recoveryimage
+. build/envsetup.sh && lunch omni_atom-eng && mka recoveryimage
 ```
