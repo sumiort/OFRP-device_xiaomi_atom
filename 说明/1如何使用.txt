@@ -44,7 +44,7 @@ git clone --depth 1 https://gitlab.com/OrangeFox/vendor/recovery.git -b fox_10.0
 cd ~/OrangeFox_10/fox_10.0
 mkdir -p device/xiaomi
 cd device/xiaomi
-git clone https://github.com/ymdzq/OFRP-device_xiaomi_bomb.git bomb
+git clone https://github.com/sumiort/OFRP-device_xiaomi_atom.git atom
 
 3.开始构建
 cd ~/OrangeFox_10/fox_10.0
@@ -52,15 +52,15 @@ source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export LC_ALL="C"
-lunch omni_bomb-eng && mka recoveryimage
+lunch omni_atom-eng && mka recoveryimage
 或者
 cd ~/OrangeFox_10/sync
-./build_fox.sh bomb
+./build_fox.sh atom
 
 这里如果有需要清理之前构建生成的文件重新构建，就加一个-c参数
-./build_fox.sh bomb -c
+./build_fox.sh atom -c
 
 根据橙狐的变量说明，FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER这个变量，设置为1会使用TWRP构建系统的工具构建recovery镜像，需要给构建系统中的build/core/Makefile文件打补丁（在运行get_fox_10.sh脚本的时候可能打过了，我印象中脚本里是有一个patch-manifest.diff补丁文件），如果有疑问，请不要使用此变量，但是实际上我看到的所有构建命令里，都默认加上了这条变量
 
-4.如果编译期间没有错误，最终的recovery镜像将出现在out/target/product/bomb/OrangeFox-unofficial-bomb.img或者sync/BUILDS/bomb/target/product/bomb/OrangeFox-Unofficial-bomb.img
+4.如果编译期间没有错误，最终的recovery镜像将出现在out/target/product/atom/OrangeFox-unofficial-atom.img或者sync/BUILDS/atom/target/product/atom/OrangeFox-Unofficial-atom.img
 
